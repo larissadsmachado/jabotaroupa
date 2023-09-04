@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">     
+    <link rel="stylesheet" href="slide.css"> 
+    <script src="jabotaroupa.js" defer></script>
+
+</head>
+
+
+<body id="home">
+    <header>
+        <div class="container">
+            <div class="logo"><img src="imagens/logojabotaroupa.png"> <a href="#home"></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="#home">home</a>
+                    <a href="#">Camisetas</a>
+                    <a href="#">Moletons</a>
+                    <a href="#">Sobre Nós</a>
+                </nav>
+            </div>
+
+            <div class="icones">
+               <i class="carrinho"><img src="imagens/carrinho.svg"><a href="#"> </a></i>
+               <i class="user"><img src="imagens/user.svg"> <a href="user.html"></a> </i>
+            </div>
+    </header>
+
+
+
+    <section class="slider">
+        <div class="slider-content">
+            
+            <input type="radio" name="btn-radio" id="radio1">  <!--bolinhas para passar o slide --> 
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">                  <!--imagens no slide -->
+                <img class="img-desktop" src="/imagens/fram1.jpg" alt="slide 1">
+                <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="/imagens/fram2.jpg" alt="slide 3">
+                <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="/imagens/fram3.jpg" alt="slide 3">
+                <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">   <!--bolinhas para passar o slide (o preenchimento automatico)--> 
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">  <!--bolinhas para passar o slide (preenchimento passando o mouse em cima)--> 
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+        <div class="linhaazul">
+            <div class="cartao"> <img class="item1" src="/imagens/cartao.svg"> <p> PARCELAMENTO EM ATÉ 8X SEM JUROS </p> </div>
+            <div class="caminhao"> <img class="item1" src="/imagens/caminhao.svg"> <p> ENTREGA PARA TODO JABOATÃO </div></p>
+            <div class="ig"> <img class="item1" src="/imagens/ig.svg"> <p> OFICIAL DA LOJA </div></p> 
+
+            
+        </div>
+    </section>
+
+
+    <section class="produtos">
+
+        <h1> CATEGORIA </h1>
+
+        <div class="containerprodutos"> 
+            <div class= "containercamiseta"><img src="imagens/camiseta.jpg"><a href="#"></a> </div>
+            <div class= "containermoletom"><img src="imagens/moletom.jpg"><a href="#"> </a> </div>
+        </div>
+        
+    </section>
+
+    <footer> 
+    <section id="sobrenos">
+
+        <div class="containerfooter">
+            <h2>Entrar em Contato</h2>
+            <p>Podemos garantir confiabilidade, tarifas de baixo custo e, <br/>
+                o mais importante, com segurança e conforto em mente.</p>
+        </div>
+    </section>
+
+</footer>
+
+</body>
+</html>

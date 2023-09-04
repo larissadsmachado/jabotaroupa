@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.containerfooter{ 
+    background: #00336C;
+    backdrop-filter: blur(2px);
+
+    display: flex;
+    width:100%;
+    height: 25.4375rem;
+    padding: 9.5rem 0rem 7.125rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-shrink: 0;
+    
+}
+
+.containerfooter h2{
+
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.55rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+
+.containerfooter p{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.linhaazul{
+    background: #00336C;
+    display: flex;
+    width: 100%;
+    padding: 0.4375rem 0rem 0.4375rem 3.125rem;
+    align-items: center;
+    gap: 18.25rem;
+
+}
+
+
+.linhaazul p{
+
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.containerprodutos{
+    width: 1;
+
+}
+
+.produtos h1{
+
+
+    margin-right: 28.63px;
+    margin-left: 30.13px;
+    flex-shrink: 0;
+ 
+    color: #00336C;
+    text-align: center;
+    font-family: Fredoka;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 4.44%;
+    
+}
+
+
+header{
+    background-color: #002956;
+    width: 100%;
+    padding: 1px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo{
+    width: 25%;
+}
+
+.logo img{
+    width: 200px;
+    cursor: pointer;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg , #4d85c4, #4989d2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.menu nav a:hover{
+    color: #ffffff;
+}
+
+
+.icones{
+    display: flex;
+    width: 4.3125rem;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+/* estilização do conteúdo */
+
+section{
+    padding: 90px 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2{
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+#menu-mobile{
+    background-color: #002956;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 77px;
+    right: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#menu-mobile nav a{
+    display: block;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#menu-mobile nav a:hover{
+    background-color: #383838;
+}
+
+#btn-menu,
+#btn-menu-close{
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1110px) {
+    .menu,
+    .social{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    #btn-menu,
+    #menu-mobile{
+        display: block;
+    }
+
+    #menu-mobile.active{
+        height: calc(100vh - 77px);
+        visibility: visible;
+    }
+}
