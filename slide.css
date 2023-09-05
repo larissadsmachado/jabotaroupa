@@ -6,6 +6,10 @@ section.slider{
     overflow: hidden;
 }
 
+.icones {
+    display: flerx
+}
+
 .slider-content{
     width: 400%;
     height: auto;
@@ -42,6 +46,7 @@ section.slider{
     border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
+    margin-top: 160px;
 }
 
 .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){

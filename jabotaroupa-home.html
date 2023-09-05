@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">     
     <link rel="stylesheet" href="slide.css"> 
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="./assets/fonts/style.css">
     <script src="jabotaroupa.js" defer></script>
 
 </head>
-
-
 <body id="home">
     <header>
         <div class="container">
-            <div class="logo"><img src="imagens/logojabotaroupa.png"> <a href="#home"></a>
+            <div class="logo"><a href="#home"><img src="imagens/logojabotaroupa.png"></a>
             </div>
             <div class="menu">
                 <nav>
                     <a href="#home">home</a>
-                    <a href="#">Camisetas</a>
-                    <a href="#">Moletons</a>
-                    <a href="#">Sobre Nós</a>
+                    <a href="camiseta.html">Camisetas</a>
+                    <a href="moletom.html">Moletons</a>
+                    <a href="sobre.html">Sobre Nós</a>
                 </nav>
             </div>
 
             <div class="icones">
-               <i class="carrinho"><img src="imagens/carrinho.svg"><a href="#"> </a></i>
-               <i class="user"><img src="imagens/user.svg"> <a href="user.html"></a> </i>
+                <a class="car" href="user.html"><img src="imagens/carrinho.svg"></a>
+                <a class="user" href="user.html"><img src="imagens/user.svg"></a>
             </div>
     </header>
-
-
 
     <section class="slider">
         <div class="slider-content">
@@ -67,15 +66,23 @@
             </div>
 
         </div>
-
-        <div class="linhaazul">
-            <div class="cartao"> <img class="item1" src="/imagens/cartao.svg"> <p> PARCELAMENTO EM ATÉ 8X SEM JUROS </p> </div>
-            <div class="caminhao"> <img class="item1" src="/imagens/caminhao.svg"> <p> ENTREGA PARA TODO JABOATÃO </div></p>
-            <div class="ig"> <img class="item1" src="/imagens/ig.svg"> <p> OFICIAL DA LOJA </div></p> 
-
-            
-        </div>
     </section>
+        
+    <div class="linhaazul">
+        <div class="option"> 
+            <img class="cartao" src="/imagens/cartao.svg"> 
+            <p> PARCELAMENTO EM ATÉ 8X SEM JUROS </p> 
+        </div>
+         <div class="option"> 
+            <img class="item1" src="/imagens/caminhao.svg"> 
+            <p> ENTREGA PARA TODO JABOATÃO 
+            </p>
+        </div>
+        <div class="option"> 
+            <i class="icon-Social-Icons"></i> 
+            <p>OFICIAL DA LOJA</p> 
+        </div>
+    </div>
 
 
     <section class="produtos">
@@ -89,16 +96,22 @@
         
     </section>
 
-    <footer> 
-    <section id="sobrenos">
+    
 
+<footer> 
+    <section id="sobrenos">
         <div class="containerfooter">
             <h2>Entrar em Contato</h2>
             <p>Podemos garantir confiabilidade, tarifas de baixo custo e, <br/>
                 o mais importante, com segurança e conforto em mente.</p>
         </div>
-    </section>
 
+        <div class="rodape"><p>&copy; 2023 Loja de Camisas</p></div>
+    </section>
+</footer>
+
+<footer>
+    <p>&copy; 2023 Loja de Camisas</p>
 </footer>
 
 </body>
